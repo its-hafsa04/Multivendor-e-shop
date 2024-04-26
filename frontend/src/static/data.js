@@ -194,7 +194,7 @@ export const navItems = [
       title: "Computers and Laptops",
       subTitle: "",
       image_Url:
-        "https://cdn.shopify.com/s/files/1/1706/9177/products/NEWAppleMacbookProwithM1ProChip14InchLaptop2021ModelMKGQ3LL_A_16GB_1TBSSD_custommacbd.jpg?v=1659592838",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO7xz1Uq16sS1KS1OGOzsNgEWTSQLHM6EuOA&usqp=CAU",
     },
     {
       id: 2,
@@ -229,13 +229,13 @@ export const navItems = [
       title: "Gifts",
       subTitle: "",
       image_Url:
-        "https://securecdn.pymnts.com/wp-content/uploads/2014/11/Gifts-Photo-700x489.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKs02TwAnaoj0XPxNX94aAapvxIzk41BbOjJJa9-Bj5DdWpaG_LXuAYc0aDcaS0gTV_aw&usqp=CAU",
     },
     {
       id: 7,
       title: "Pet Care",
       subTitle: "",
-      image_Url: "https://cdn.openpr.com/T/c/Tc15444071_g.jpg",
+      image_Url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5RM9MqAqw52MIjqzYn3rf2fJjtzxdJimGJw&usqp=CAU",
     },
     {
       id: 8,
@@ -271,11 +271,12 @@ export const navItems = [
       image_Url: [
         {
           public_id: "test",
-          url: "https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png",
+          
+          url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO7xz1Uq16sS1KS1OGOzsNgEWTSQLHM6EuOA&usqp=CAU",
         },
         {
           public_id: "test",
-          url: "https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png",
+          url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO7xz1Uq16sS1KS1OGOzsNgEWTSQLHM6EuOA&usqp=CAU",
         },
       ],
       shop: {
@@ -331,11 +332,11 @@ export const navItems = [
       image_Url: [
         {
           public_id: "test",
-          url: "https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png",
+          url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO7xz1Uq16sS1KS1OGOzsNgEWTSQLHM6EuOA&usqp=CAU",
         },
         {
           public_id: "test",
-          url: "https://www.istorebangladesh.com/images/thumbs/0000286_macbook-pro-m1_550.png",
+          url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO7xz1Uq16sS1KS1OGOzsNgEWTSQLHM6EuOA&usqp=CAU",
         },
       ],
       shop: {

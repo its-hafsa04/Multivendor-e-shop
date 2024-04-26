@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { RxAvatar } from "react-icons/rx";
 import axios from "axios";
 import { server } from "../../server.js";
+import { toast } from "react-toastify";
 
 function Signup() {
   const [name, setName] = useState("");
@@ -32,8 +33,13 @@ function Signup() {
     axios
       .post(`${server}/user/create-user`, newForm, config) //user  is created here
       .then((res) => {
-        alert(res.message);
+       toast.success(res.data.message);
+        setName("");
+        setEmail("");
+        setPassword("");
+        setavatar();
       }).catch((error) => {
+        toast.error(error.message);
         console.log(error);
       });
       
