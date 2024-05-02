@@ -16,7 +16,7 @@ const ActivationPage = () => {
           });
           console.log(res.data.message);
         } catch (error) {
-          console.log(error.response.data.message);
+          console.log(error.message);
           setError(true);
         }
       };
