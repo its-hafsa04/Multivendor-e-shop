@@ -6,7 +6,7 @@ const Chatbot = ({ onClose }) => {
   const [query, setQuery] = useState('');
   const [response, setResponse] = useState('');
   const [loading, setLoading] = useState(false);
-  const [showResponse, setShowResponse] = useState(false); 
+  const [showResponse, setShowResponse] = useState(false);
 
   const handleSendQuery = async () => {
     if (!query) return;
@@ -33,12 +33,18 @@ const Chatbot = ({ onClose }) => {
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
-      width: '400px',
+      width: '100%', 
+      maxWidth: '400px', 
       border: '1.5px solid black',
       borderRadius: '15px',
       padding: '15px',
       backgroundColor: '#e3e6e4',
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      '@media (max-width: 480px)': { 
+        width: '90%',
+        bottom: '10px',
+        right: '10px',
+      }
     }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h5 style={{
@@ -46,20 +52,20 @@ const Chatbot = ({ onClose }) => {
           margin: '0',
           padding: '5px 2px',
           color: '#333',
-          backgroundColor:'white',
+          backgroundColor: 'white',
           borderRadius: '10px',
         }}>
-          Hi✋! I'm a assistant chatbot. How can I help you?
+          Hi✋! I'm an assistant chatbot. How can I help you?
         </h5>
         <button onClick={onClose} style={{
           color: 'red',
           cursor: 'pointer',
           fontSize: '20px',
-          border:"2px solid red",
+          border: "2px solid red",
           borderRadius: '50%',
           padding: '5px',
           backgroundColor: 'white',
-          marginTop:'-50px'
+          marginTop: '-50px'
         }}>
           <MdClose />
         </button>
@@ -74,11 +80,19 @@ const Chatbot = ({ onClose }) => {
           borderRadius: '10px',
           backgroundColor: 'white',
           height: '200px',
+          maxHeight: '200px',
         }}>
           {loading ? <p>Loading...</p> : <p>{response}</p>}
         </div>
       )}
-      <div style={{ display: 'flex', flexDirection: 'row', marginTop: '10px' }}>
+      <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        marginTop: '10px',
+        '@media (max-width: 480px)': { 
+          flexDirection: 'column',
+        }
+      }}>
         <input
           type="text"
           value={query}
@@ -91,6 +105,9 @@ const Chatbot = ({ onClose }) => {
             border: '1px solid black',
             borderRadius: '15px',
             fontSize: '14px',
+            '@media (max-width: 480px)': { 
+              marginBottom: '10px',
+            }
           }}
         />
         <button onClick={handleSendQuery} style={{
@@ -104,6 +121,10 @@ const Chatbot = ({ onClose }) => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          '@media (max-width: 480px)': {
+            marginLeft: '0',
+            width: '100%',
+          }
         }}>
           <MdSend style={{ fontSize: '28px' }} />
         </button>
