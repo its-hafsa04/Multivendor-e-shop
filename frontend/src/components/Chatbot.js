@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { MdClose, MdSend } from "react-icons/md";
+import { server } from '../server';
 
 const Chatbot = ({ onClose }) => {
   const [query, setQuery] = useState('');
@@ -14,7 +15,7 @@ const Chatbot = ({ onClose }) => {
     setLoading(true);
     setShowResponse(true);
     try {
-      const res = await axios.post('http://localhost:8000/api/gemini', { query });
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}/gemini`, { query });
       setResponse(res.data.response);
     } catch (error) {
       console.error('Error fetching chatbot response:', error);

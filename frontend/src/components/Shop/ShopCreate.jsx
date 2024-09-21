@@ -27,7 +27,7 @@ const ShopCreate = () => {
     console.log("Avatar Data: ", avatar); // Check if avatar data exists
   
     axios
-      .post(`${server}/shop/create-shop`, {
+      .post(`${process.env.REACT_APP_API_URL}/shop/create-shop`, {
         name,
         email,
         password,

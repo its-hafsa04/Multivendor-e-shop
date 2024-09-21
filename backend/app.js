@@ -8,6 +8,7 @@ const cors = require("cors");
 app.use(
   cors({
     origin: ["https://multivendor-e-shop-frontend.vercel.app"],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
   })
 );
@@ -40,7 +41,7 @@ const message = require("./controller/message");
 const withdraw = require("./controller/withdraw");
 const geminiRoutes = require('./routes/api/gemini');
 
-app.use('/api/gemini', geminiRoutes);
+app.use('/api/v2/gemini', geminiRoutes);
 app.use("/api/v2/user", user);
 app.use("/api/v2/conversation", conversation);
 app.use("/api/v2/message", message);

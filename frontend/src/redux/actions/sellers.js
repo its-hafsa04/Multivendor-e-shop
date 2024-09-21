@@ -8,7 +8,7 @@ export const getAllSellers = () => async (dispatch) => {
       type: "getAllSellersRequest",
     });
 
-    const { data } = await axios.get(`${server}/shop/admin-all-sellers`, {
+    const { data } = await axios.get(`${process.env.REACT_APP_API_URL}/shop/admin-all-sellers`, {
       withCredentials: true,
     });
 

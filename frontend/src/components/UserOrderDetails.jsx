@@ -36,7 +36,7 @@ const UserOrderDetails = () => {
   const reviewHandler = async (e) => {
     await axios
       .put(
-        `${server}/product/create-new-review`,
+        `${process.env.REACT_APP_API_URL}/product/create-new-review`,
         {
           user,
           rating,
@@ -60,7 +60,7 @@ const UserOrderDetails = () => {
 
   const refundHandler = async () => {
     await axios
-      .put(`${server}/order/order-refund/${id}`, {
+      .put(`${process.env.REACT_APP_API_URL}/order/order-refund/${id}`, {
         status: "Processing refund",
       })
       .then((res) => {
@@ -77,7 +77,7 @@ const UserOrderDetails = () => {
       const userId = user?._id;
       const sellerId = data?.cart[0]?.shop?._id;
       await axios
-        .post(`${server}/conversation/create-new-conversation`, {
+        .post(`${process.env.REACT_APP_API_URL}/conversation/create-new-conversation`, {
           groupTitle,
           userId,
           sellerId,

@@ -27,7 +27,7 @@ const AllCoupons = () => {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get(`${server}/coupon/get-coupon/${seller._id}`, {
+      .get(`${process.env.REACT_APP_API_URL}/coupon/get-coupon/${seller._id}`, {
         withCredentials: true,
       })
       .then((res) => {
@@ -40,7 +40,7 @@ const AllCoupons = () => {
   }, [dispatch]);
 
   const handleDelete = async (id) => {
-    axios.delete(`${server}/coupon/delete-coupon/${id}`,{withCredentials: true}).then((res) => {
+    axios.delete(`${process.env.REACT_APP_API_URL}/coupon/delete-coupon/${id}`,{withCredentials: true}).then((res) => {
       toast.success("Coupon code deleted succesfully!")
     })
     window.location.reload();
@@ -51,7 +51,7 @@ const AllCoupons = () => {
 
     await axios
       .post(
-        `${server}/coupon/create-coupon-code`,
+        `${process.env.REACT_APP_API_URL}/coupon/create-coupon-code`,
         {
           name,
           minAmount,

@@ -17,7 +17,7 @@ const ShopInfo = ({ isOwner }) => {
   useEffect(() => {
     dispatch(getAllProductsShop(id));
     setIsLoading(true);
-    axios.get(`${server}/shop/get-shop-info/${id}`).then((res) => {
+    axios.get(`${process.env.REACT_APP_API_URL}/shop/get-shop-info/${id}`).then((res) => {
      setData(res.data.shop);
      setIsLoading(false);
     }).catch((error) => {
@@ -28,7 +28,7 @@ const ShopInfo = ({ isOwner }) => {
   
 
   const logoutHandler = async () => {
-    axios.get(`${server}/shop/logout`,{
+    axios.get(`${process.env.REACT_APP_API_URL}/shop/logout`,{
       withCredentials: true,
     });
     window.location.reload();
