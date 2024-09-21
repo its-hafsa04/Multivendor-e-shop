@@ -7,7 +7,7 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: ["https://multivendor-e-shop-frontend.vercel.app/"],
+    origin: ["https://multivendor-e-shop-frontend.vercel.app"],
     credentials: true,
   })
 );

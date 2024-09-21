@@ -8,7 +8,7 @@ import Events from "../components/Events/Events";
 import Sponsored from "../components/Route/Sponsored";
 import Footer from "../components/Layout/Footer";
 import Chatbot from "../components/Chatbot";
-import { MdHelp } from "react-icons/md";
+
 
 const HomePage = () => {
   const [isChatbotOpen, setChatbotOpen] = useState(false);
@@ -27,8 +27,6 @@ const HomePage = () => {
             position: 'fixed',
             bottom: '20px',
             right: '20px',
-            backgroundColor: '#3495eb',
-            borderRadius: '50%',
             border: 'none',
             cursor: 'pointer',
             fontSize: '18px',
@@ -37,16 +35,15 @@ const HomePage = () => {
   }}
         >
            <div style={{ position: 'relative' }}>
-    <MdHelp
-      style={{
-        fontSize: '100px',
-        color: '#0d66b5',
-      }}
-    />
+  <img src="https://cdn-icons-png.freepik.com/256/5828/5828712.png?semt=ais_hybrid" alt=""
+   style={{
+    width: '100px',
+   }} />
+    
     <span
       style={{
         position: 'absolute',
-        top: '-20px', 
+        top: '-25px', 
         left: '25%',
         transform: 'translateX(-50%)',
         backgroundColor: '#fff',
@@ -56,6 +53,7 @@ const HomePage = () => {
         fontSize: '14px',
         whiteSpace: 'nowrap',
         animation: 'popText 2s infinite',
+        border: '1px solid #0d66b5'
       }}
     >
       Need Help?
