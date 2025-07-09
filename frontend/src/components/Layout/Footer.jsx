@@ -49,7 +49,7 @@ const Footer = () => {
       <div className="grid grid-cols-1 sm:gird-cols-3 lg:grid-cols-4 gap-6 sm:px-8 px-5 py-16 sm:text-center">
         <ul className="px-5 text-center sm:text-start flex sm:block flex-col items-center">
           <img
-            src="https://i.pinimg.com/736x/f6/d0/af/f6d0af482a5a1116dbbd2fd3ff95e58c.jpg"
+            src="https://shopo.quomodothemes.website/assets/images/logo.svg"
             alt=""
             style={{ filter: "brightness(0) invert(1)" }}
           />
@@ -57,28 +57,28 @@ const Footer = () => {
           <p>The home and elements needeed to create beatiful products.</p>
           <div className="flex items-center mt-[15px]">
             <Link to="https://github.com/its-hafsa04">
-              <div className="bg-[#42192f] text-white p-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
+              <div className="bg-[#42192f] text-white p-2 mx-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
                 <AiOutlineGithub
                     size={25} className="cursor-pointer"
                 />
               </div>
             </Link>
             <Link to="https://www.linkedin.com/in/hafsa-sajid-38bb4627b/">
-              <div className="bg-[#42192f] text-white p-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
+              <div className="bg-[#42192f] text-white p-2 mx-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
                 <AiFillLinkedin
                   size={25} className="cursor-pointer" 
                 />
               </div>
             </Link>
             <Link to="https://medium.com/@sajidhafsa23">
-              <div className="bg-[#42192f] text-white p-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
+              <div className="bg-[#42192f] text-white p-2 mx-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
                 <IoLogoMedium
                   size={25} className="cursor-pointer" 
                 />
               </div>
             </Link>
             <Link to="https://www.facebook.com/profile.php?id=100010268648729">
-              <div className="bg-[#42192f] text-white p-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
+              <div className="bg-[#42192f] text-white p-2 mx-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
                 <AiFillFacebook size={25} className="cursor-pointer" />
               </div>
             </Link>
@@ -86,7 +86,7 @@ const Footer = () => {
         </ul>
 
         <ul className="text-center sm:text-start">
-          <h1 className="mb-1 font-semibold text-[#42192f]">Company</h1>
+          <h1 className="mb-1 font-semibold text-white">Company</h1>
           {footerProductLinks.map((link, index) => (
             <li key={index}>
               <Link
@@ -101,7 +101,7 @@ const Footer = () => {
         </ul>
 
         <ul className="text-center sm:text-start">
-          <h1 className="mb-1 font-semibold text-[#42192f]">Shop</h1>
+          <h1 className="mb-1 font-semibold text-white">Shop</h1>
           {footercompanyLinks.map((link, index) => (
             <li key={index}>
               <Link
@@ -116,7 +116,7 @@ const Footer = () => {
         </ul>
 
         <ul className="text-center sm:text-start">
-          <h1 className="mb-1 font-semibold text-[#42192f]">Support</h1>
+          <h1 className="mb-1 font-semibold text-white">Support</h1>
           {footerSupportLinks.map((link, index) => (
             <li key={index}>
               <Link

@@ -6,19 +6,19 @@ export const navItems = [
     },
     {
       title: "Best Selling",
-      url: "../pages/BestSellingPage",
+      url: "/best-selling",
     },
     {
       title: "Products",
-      url: "../pages/ProductsPage",
+      url: "/products",
     },
     {
       title: "Events",
-      url: "../pages/EventsPage",
+      url: "/events",
     },
     {
       title: "FAQ",
-      url: "../pages/FAQPage",
+      url: "/faq",
     },
   ];
   
@@ -235,7 +235,7 @@ export const navItems = [
       id: 7,
       title: "Pet Care",
       subTitle: "",
-      image_Url: "https://img.freepik.com/premium-vector/cute-kawaii-kitten-character-sticker-transparent-background-design-cute-cartoon-cat-characters_955564-1282.jpg",
+      image_Url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw-m3O3HGrMNxOCI8Mc8sd8rPmWnVyC1M4zA&s",
     },
     {
       id: 8,
