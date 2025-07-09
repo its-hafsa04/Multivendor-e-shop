@@ -58,7 +58,7 @@ const Header = ({ activeHeading }) => {
           <div>
             <Link to="/">
               <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+                src="https://i.pinimg.com/736x/f6/d0/af/f6d0af482a5a1116dbbd2fd3ff95e58c.jpg"
                 alt=""
               />
             </Link>
@@ -70,7 +70,7 @@ const Header = ({ activeHeading }) => {
               placeholder="Search Product..."
               value={searchTerm}
               onChange={handleSearchChange}
-              className="h-[40px] w-full px-2 border-[#3957db] border-[2px] rounded-md"
+              className="h-[40px] w-full px-2 border-[#42192f] border-[2px] rounded-md"
             />
             <AiOutlineSearch
               size={30}
@@ -99,7 +99,7 @@ const Header = ({ activeHeading }) => {
 
           <div className={`${styles.button}`}>
             <Link to={`${isSeller ? "/dashboard" : "/shop-create"}`}>
-              <h1 className="text-[#fff] flex items-center">
+              <h1 className="text-[#fff] bg-[#42192f] flex items-center">
                 {isSeller ? "Go Dashboard" : "Become Seller"}{" "}
                 <IoIosArrowForward className="ml-1" />
               </h1>
@@ -110,7 +110,7 @@ const Header = ({ activeHeading }) => {
       <div
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
-        } transition hidden 800px:flex items-center justify-between w-full bg-[#3321c8] h-[70px]`}
+        } transition hidden 800px:flex items-center justify-between w-full bg-[#42192f] h-[70px]`}
       >
         <div
           className={`${styles.section} relative ${styles.noramlFlex} justify-between`}

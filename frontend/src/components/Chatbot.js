@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { MdClose, MdSend } from "react-icons/md";
-import { server } from '../server';
 
 const Chatbot = ({ onClose }) => {
   const [query, setQuery] = useState('');

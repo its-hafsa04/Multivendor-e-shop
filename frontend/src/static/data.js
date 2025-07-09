@@ -6,19 +6,19 @@ export const navItems = [
     },
     {
       title: "Best Selling",
-      url: "/best-selling",
+      url: "../pages/BestSellingPage",
     },
     {
       title: "Products",
-      url: "/products",
+      url: "../pages/ProductsPage",
     },
     {
       title: "Events",
-      url: "/events",
+      url: "../pages/EventsPage",
     },
     {
       title: "FAQ",
-      url: "/faq",
+      url: "../pages/FAQPage",
     },
   ];
   
@@ -229,13 +229,13 @@ export const navItems = [
       title: "Gifts",
       subTitle: "",
       image_Url:
-        "https://securecdn.pymnts.com/wp-content/uploads/2014/11/Gifts-Photo-700x489.jpg",
+        "https://neurongarage.com/wp-content/uploads/2021/12/getty_168325476_349217-e1643926469153.jpg",
     },
     {
       id: 7,
       title: "Pet Care",
       subTitle: "",
-      image_Url: "https://cdn.openpr.com/T/c/Tc15444071_g.jpg",
+      image_Url: "https://img.freepik.com/premium-vector/cute-kawaii-kitten-character-sticker-transparent-background-design-cute-cartoon-cat-characters_955564-1282.jpg",
     },
     {
       id: 8,
