@@ -60,6 +60,7 @@ const Header = ({ activeHeading }) => {
               <img
                 src="https://shopo.quomodothemes.website/assets/images/logo.svg"
                 alt=""
+                style={{ filter: "brightness(0) invert(1)" }}
               />
             </Link>
           </div>
@@ -220,6 +221,7 @@ const Header = ({ activeHeading }) => {
                 src="https://shopo.quomodothemes.website/assets/images/logo.svg"
                 alt=""
                 className="mt-3 cursor-pointer"
+                style={{ filter: "brightness(0) invert(1)" }}
               />
             </Link>
           </div>

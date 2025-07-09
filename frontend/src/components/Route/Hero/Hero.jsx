@@ -72,7 +72,7 @@ const Hero = () => {
             <br className="hidden md:block" /> Transform your space with our carefully chosen collection that brings
             style and functionality <br className="hidden md:block" /> together in perfect harmony.
           </p>
-          <Link href="/products" className="inline-block mt-8">
+          <Link to="/products" className="inline-block mt-8">
             <button className="bg-[#42192f] hover:bg-[#331425] text-white font-[500] text-[18px] px-8 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
               Shop Now
             </button>

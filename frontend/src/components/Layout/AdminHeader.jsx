@@ -16,6 +16,7 @@ const AdminHeader = () => {
           <img
             src="https://shopo.quomodothemes.website/assets/images/logo.svg"
             alt=""
+            style={{ filter: "brightness(0) invert(1)" }}
           />
         </Link>
       </div>
