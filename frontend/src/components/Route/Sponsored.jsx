@@ -23,7 +23,7 @@ const Sponsored = () => {
         </div>
         <div className="flex items-start">
           <img
-            src="https://e7.pngegg.com/pngimages/641/629/png-clipart-laptop-lenovo-logo-font-laptop-electronics-text-thumbnail.png"
+            src="https://static.vecteezy.com/system/resources/previews/020/927/282/non_2x/lenovo-logo-brand-phone-symbol-name-black-design-china-mobile-illustration-free-vector.jpg"
             style={{width:"150px", objectFit:"contain"}}
             alt=""
           />
