@@ -2,7 +2,7 @@ import React from "react";
 import { FiShoppingBag } from "react-icons/fi";
 import {GrWorkshop} from "react-icons/gr";
 import { RxDashboard } from "react-icons/rx";
-import { CiMoneyBill, CiSettings } from "react-icons/ci";
+import { CiMoneyBill } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import { BsHandbag } from "react-icons/bs";
@@ -11,7 +11,7 @@ import { AiOutlineSetting } from "react-icons/ai";
 
 const AdminSideBar = ({ active }) => {
   return (
-    <div className="w-full h-[90vh] bg-white shadow-sm overflow-y-scroll sticky top-0 left-0 z-10">
+    <div className="w-full h-[90vh] bg-[#9e8393] shadow-sm overflow-y-scroll sticky top-0 left-0 z-10">
       {/* single item */}
       <div className="w-full flex items-center p-4">
         <Link to="/admin/dashboard" className="w-full flex items-center">

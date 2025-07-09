@@ -54,7 +54,7 @@ const Header = ({ activeHeading }) => {
   return (
     <>
       <div className={`${styles.section}`}>
-        <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between">
+        <div className="hidden bg-[#9e8393] 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between">
           <div>
             <Link to="/">
               <img
@@ -205,7 +205,7 @@ const Header = ({ activeHeading }) => {
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
         }
-      w-full h-[60px] bg-[#fff] z-50 top-0 left-0 shadow-sm 800px:hidden`}
+      w-full h-[60px] bg-[#9e8393] z-50 top-0 left-0 shadow-sm 800px:hidden`}
       >
         <div className="w-full flex items-center justify-between">
           <div>
@@ -221,7 +221,6 @@ const Header = ({ activeHeading }) => {
                 src="https://shopo.quomodothemes.website/assets/images/logo.svg"
                 alt=""
                 className="mt-3 cursor-pointer"
-                style={{ filter: "brightness(0) invert(1)" }}
               />
             </Link>
           </div>

@@ -7,7 +7,6 @@ import { RxCross1 } from "react-icons/rx";
 import { useDispatch, useSelector } from "react-redux";
 import styles from "../../styles/styles";
 import Loader from "../Layout/Loader";
-import { server } from "../../server";
 import { toast } from "react-toastify";
 
 const AllCoupons = () => {
@@ -37,7 +36,7 @@ const AllCoupons = () => {
       .catch((error) => {
         setIsLoading(false);
       });
-  }, [dispatch]);
+  }, [dispatch, seller._id]);
 
   const handleDelete = async (id) => {
     axios.delete(`${process.env.REACT_APP_API_URL}/coupon/delete-coupon/${id}`,{withCredentials: true}).then((res) => {
