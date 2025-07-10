@@ -29,7 +29,7 @@ const Sponsored = () => {
     <div className="hidden sm:block bg-white py-10 px-5 mb-12 cursor-pointer rounded-xl mx-4 sm:mx-6 lg:mx-8 overflow-hidden">
       <div className="relative">
         {/* Moving container */}
-        <div className="flex animate-scroll">
+        <div className="flex animate-scroll min-w-max">
           {/* First set of logos */}
           {sponsors.map((sponsor, index) => (
             <div key={index} className="flex-shrink-0 mx-8 flex items-center justify-center">

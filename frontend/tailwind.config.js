@@ -8,6 +8,15 @@ module.exports = {
       Poppins: ['Poppins', "sans-serif"],
     },
     extend: {
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        scroll: 'scroll 20s linear infinite',
+      },
       screens: {
         "1000px": "1050px",
         "1100px": "1110px",
@@ -19,3 +28,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+
