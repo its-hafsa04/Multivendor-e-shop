@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaGift, FaLaptop, FaCoffee, FaHeart, FaShoppingBag, FaGamepad, FaHeadphones, FaCamera, FaBook } from "react-icons/fa";
 import { MdDesktopMac } from "react-icons/md";           
