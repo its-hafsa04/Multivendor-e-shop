@@ -57,8 +57,8 @@ const Header = ({ activeHeading }) => {
         <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between">
           <div>
             <Link to="/">
-              <h1 className="flex items-center gap-2 font-semibold text-[28px] text-[#343252] font-sans">
-                <span className="w-[22px] h-[22px] flex items-center justify-center border-2 border-[#343252] rounded-full text-[12px]">
+              <h1 className="flex items-center gap-2 font-bold text-[28px] text-[#343252] font-sans">
+                <span className="w-[22px] h-[22px] flex items-center justify-center border-2 border-[#343252] rounded-full text-[18px]">
                   Ⓜ
                 </span>
                 MulMart
