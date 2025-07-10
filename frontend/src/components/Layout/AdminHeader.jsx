@@ -10,14 +10,16 @@ const AdminHeader = () => {
     const {user} = useSelector((state) => state.user);
 
   return (
-         <div className="w-full h-[80px] bg-[#9e8393] shadow sticky top-0 left-0 z-30 flex items-center justify-between px-4">
+         <div className="w-full h-[80px] bg-[#343252] shadow sticky top-0 left-0 z-30 flex items-center justify-between px-4">
       <div>
         <Link to="/">
-          <img
-            src="https://shopo.quomodothemes.website/assets/images/logo.svg"
-            alt=""
-            style={{ filter: "brightness(0) invert(1)" }}
-          />
+          <h1 className="flex items-center gap-2 font-semibold text-[28px] text-white font-sans">
+  <span className="w-[22px] h-[22px] flex items-center justify-center border-2 border-white rounded-full text-[12px]">
+    Ⓜ
+  </span>
+  MulMart
+</h1>
+
         </Link>
       </div>
       <div className="flex items-center">

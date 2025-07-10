@@ -57,11 +57,12 @@ const Header = ({ activeHeading }) => {
         <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between">
           <div>
             <Link to="/">
-              <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
-                alt=""
-                style={{ filter: "brightness(0) saturate(0) opacity(0.6)" }}
-              />
+              <h1 className="flex items-center gap-2 font-semibold text-[28px] text-[#343252] font-sans">
+                <span className="w-[22px] h-[22px] flex items-center justify-center border-2 border-[#343252] rounded-full text-[12px]">
+                  Ⓜ
+                </span>
+                MulMart
+              </h1>
             </Link>
           </div>
           {/* search box */}
@@ -71,7 +72,7 @@ const Header = ({ activeHeading }) => {
               placeholder="Search Product..."
               value={searchTerm}
               onChange={handleSearchChange}
-              className="h-[40px] w-full px-2 border-[#42192f] border-[2px] rounded-md"
+              className="h-[40px] w-full px-2 border-[#343252] border-[2px] rounded-md"
             />
             <AiOutlineSearch
               size={30}
@@ -100,7 +101,7 @@ const Header = ({ activeHeading }) => {
 
           <div className={`${styles.button}`}>
             <Link to={`${isSeller ? "/dashboard" : "/shop-create"}`}>
-              <h1 className="text-[#fff] bg-[#42192f] flex items-center">
+              <h1 className="text-[#fff] bg-[#343252] flex items-center">
                 {isSeller ? "Go Dashboard" : "Become Seller"}{" "}
                 <IoIosArrowForward className="ml-1" />
               </h1>
@@ -111,7 +112,7 @@ const Header = ({ activeHeading }) => {
       <div
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
-        } transition hidden 800px:flex items-center justify-between w-full bg-[#42192f] h-[70px]`}
+        } transition hidden 800px:flex items-center justify-between w-full bg-[#343252] h-[70px]`}
       >
         <div
           className={`${styles.section} relative ${styles.noramlFlex} justify-between`}
@@ -205,7 +206,7 @@ const Header = ({ activeHeading }) => {
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
         }
-      w-full h-[60px] bg-[#9e8393] z-50 top-0 left-0 shadow-sm 800px:hidden`}
+      w-full h-[60px] bg-[#343252] z-50 top-0 left-0 shadow-sm 800px:hidden`}
       >
         <div className="w-full flex items-center justify-between">
           <div>
@@ -217,11 +218,12 @@ const Header = ({ activeHeading }) => {
           </div>
           <div>
             <Link to="/">
-              <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
-                alt=""
-                className="mt-3 cursor-pointer"
-              />
+              <h1 className="flex items-center gap-2 font-semibold text-[28px] text-white font-sans">
+  <span className="w-[22px] h-[22px] flex items-center justify-center border-2 border-white rounded-full text-[12px]">
+    Ⓜ
+  </span>
+  MulMart
+</h1>
             </Link>
           </div>
           <div>

@@ -30,7 +30,7 @@ const Sponsored = () => {
         </div>
         <div className="flex items-start">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCvh-j7HsTHJ8ZckknAoiZMx9VcFmsFkv72g&s"
+            src="https://www.mango.org/wp-content/uploads/2021/10/22_MNG_010_Logo_Black.jpg"
             style={{width:"150px", objectFit:"contain"}}
             alt=""
           />

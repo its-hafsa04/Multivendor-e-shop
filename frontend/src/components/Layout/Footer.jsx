@@ -15,7 +15,7 @@ import {
 const Footer = () => {
   return (
     <div className="bg-[#000] text-white">
-      <div className="w-full mt-16 bg-[#42192f] rounded-2xl py-12 px-4 md:px-12">
+      <div className="w-full mt-16 bg-[#343252] rounded-2xl py-12 px-4 md:px-12">
   <div className="text-center">
     <div className="mb-8">
       <h2 className="lg:text-4xl text-3xl lg:leading-normal font-semibold text-white">
@@ -46,39 +46,40 @@ const Footer = () => {
   </div>
 </div>
 
-      <div className="grid grid-cols-1 sm:gird-cols-3 lg:grid-cols-4 bg-[#241d21] gap-6 sm:px-8 px-5 py-16 sm:text-center">
+      <div className="grid grid-cols-1 sm:gird-cols-3 lg:grid-cols-4 bg-[#2e2c3e] gap-6 sm:px-8 px-5 py-16 sm:text-center">
         <ul className="px-5 text-center sm:text-start flex sm:block flex-col items-center">
-          <img
-            src="https://shopo.quomodothemes.website/assets/images/logo.svg"
-            alt=""
-            style={{ filter: "brightness(0) invert(1)" }}
-          />
+          <h1 className="flex items-center gap-2 font-semibold text-[28px] text-white font-sans">
+  <span className="w-[22px] h-[22px] flex items-center justify-center border-2 border-white rounded-full text-[12px]">
+    Ⓜ
+  </span>
+  MulMart
+</h1>
           <br />
           <p>The home and elements needeed to create beatiful products.</p>
           <div className="flex items-center mt-[15px]">
             <Link to="https://github.com/its-hafsa04">
-              <div className="bg-[#42192f] text-white p-2 mx-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
+              <div className="bg-[#343252] text-white p-2 mx-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
                 <AiOutlineGithub
                     size={25} className="cursor-pointer"
                 />
               </div>
             </Link>
             <Link to="https://www.linkedin.com/in/hafsa-sajid-38bb4627b/">
-              <div className="bg-[#42192f] text-white p-2 mx-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
+              <div className="bg-[#343252] text-white p-2 mx-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
                 <AiFillLinkedin
                   size={25} className="cursor-pointer" 
                 />
               </div>
             </Link>
             <Link to="https://medium.com/@sajidhafsa23">
-              <div className="bg-[#42192f] text-white p-2 mx-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
+              <div className="bg-[#343252] text-white p-2 mx-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
                 <IoLogoMedium
                   size={25} className="cursor-pointer" 
                 />
               </div>
             </Link>
             <Link to="https://www.facebook.com/profile.php?id=100010268648729">
-              <div className="bg-[#42192f] text-white p-2 mx-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
+              <div className="bg-[#343252] text-white p-2 mx-2 rounded-full inline-flex items-center justify-center hover:opacity-80 transition">
                 <AiFillFacebook size={25} className="cursor-pointer" />
               </div>
             </Link>
